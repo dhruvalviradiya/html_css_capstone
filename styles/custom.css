@@ -1,0 +1,496 @@
+/*  
+  **************************************
+  **************************************
+  ***                                ***
+  ***    Auther: Dhruval Viradiya    ***
+  ***          HTML5/CSS3            ***
+  ***      November 30, 2021         ***
+  ***                                ***
+  **************************************
+  **************************************
+  */
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Poppins font for page and default 16px font size for page  */
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    line-height: 24px;
+    color: #111;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* main wrapper */
+#main-wrapper {
+    width: 100%;
+    overflow: auto;
+}
+
+/* container */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* header */
+header {
+    background-color: rgba(1, 70, 102, 0.9);
+    position: relative;
+}
+/* top header contact info block*/
+.header-contact-info {
+    padding: 10px 0px;
+}
+
+/* top header contact info*/
+.header-contact-info .info {
+    text-align: right;
+}
+
+/* top header contact info item*/
+.header-contact-info .info .info-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #fff;
+    border-right: 1px solid #fff;
+}
+.header-contact-info .info .info-item:last-child {
+    border-right: none;
+}
+
+/* top header contact info: email address*/
+.header-contact-info .info .info-item a {
+    /* link */
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation block wrapper */
+.menu-space {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(2, 57, 82, 0.9);
+    padding: 10px 0;
+}
+
+/* logo  */
+#logo img {
+    height: 60px;
+    width: auto;
+    max-width: 100%;
+}
+
+/* navigation */
+nav ul#navlist {
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation item */
+nav ul#navlist li {
+    /* remove the bullets */
+    list-style-type: none;
+    display: inline-block;
+}
+
+/* navigation item anchor link */
+nav ul#navlist li a {
+    /* link */
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    display: block;
+    padding: 0.2em 0.6em;
+}
+
+/* navigation item anchor link hover and active*/
+nav ul#navlist li a:hover,
+nav ul#navlist li a.active {
+    /* link hover and active link   */
+    background: #fff;
+    color: #195875;
+    border-radius: 5px;
+}
+
+/* shadow class */
+.shadow {
+    box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.55);
+}
+
+/* section styling start */
+section#content {
+    min-height: 500px;
+    padding: 1em;
+}
+/* section block */
+.section-block {
+    margin: 15px 0;
+}
+/* section heading wrapper */
+.section-heading-wrapper {
+    text-align: center;
+    margin: 30px;
+}
+
+/* section heading  */
+.section-heading {
+    display: inline-block;
+    position: relative;
+}
+.section-heading:before {
+    content: "";
+    position: absolute;
+    left: -80px;
+    top: 50%;
+    width: 70px;
+    height: 2px;
+    background: #023952;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.section-heading:after {
+    content: "";
+    position: absolute;
+    right: -80px;
+    top: 50%;
+    width: 70px;
+    height: 2px;
+    background: #023952;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/* section heading text */
+.section-heading h1,
+.section-heading h2 {
+    margin: 0px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 0;
+    color: #014666;
+    line-height: 1;
+}
+
+/* Home page : start */
+
+/* Parallax Banner */
+.banner-area {
+    position: relative;
+    background: url("../images/slider.jpg") 50% no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.banner-area:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+/* slider title block  */
+.slider-title {
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    position: absolute;
+    margin-top: 40vh;
+    text-align: center;
+}
+
+/* tagline inside the slider title  */
+.slider-title .tagline {
+    z-index: 9;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.85);
+    line-height: 1;
+}
+
+/* call to action inside the slider title  */
+.slider-title .cta {
+    border-radius: 20px;
+    background: #023952;
+    padding: 10px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.slider-title .cta:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* service box wrapper */
+.services-wrapper {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* service box */
+.service-box {
+    display: inline-block;
+    margin: 0 25px 15px 0;
+    max-width: 100%;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+/* hover effect  */
+.service-box:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* service image  */
+.service-box img {
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+}
+
+/* service title inside the service box */
+.service-box .service-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+    background: rgba(1, 70, 102, 0.9);
+}
+
+/* Home page : end */
+
+/* Service page : start */
+
+/* service block */
+.service-block {
+    padding: 10px 20px;
+    margin: 20px 0;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    border-radius: 0.3rem !important;
+    background-color: #fff !important;
+}
+
+/* title  */
+.service-block .service-title h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #014666;
+}
+
+/* line below service title */
+.service-block .service-title hr {
+    width: 150px;
+    height: 4px;
+    background: #014666;
+    display: inline-block;
+    margin: 5px 0 10px;
+}
+
+/* service text */
+.service-block .service-detail p {
+    font-size: 16px;
+    margin: 0 0 1rem;
+}
+
+/* service image block */
+.service-block .service-img-block {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+/* service image  */
+.service-block .service-img-block img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* service details block */
+.service-block .service-detail {
+    width: 58%;
+    display: inline-block;
+    vertical-align: top;
+}
+/* Service page : end */
+
+/* Pricing page : start */
+
+.table-container {
+    width: 100%;
+    overflow: auto;
+}
+
+/* Table css */
+table {
+    width: 100%;
+    border: 1px solid;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* border and padding for th and td  */
+table td,
+table th {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+/*th css */
+table th {
+    padding: 15px;
+    background-color: #ededed;
+}
+/* Pricing page : end */
+
+/* contact us page : start */
+/* form */
+form {
+    width: 580px;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* fieldset */
+form fieldset {
+    background-color: #f8f9f9;
+    border: none;
+    padding: 15px;
+    margin: 0;
+}
+
+/* form label */
+form label,
+.input-label {
+    display: block;
+    width: 130px;
+    clear: both;
+    float: left;
+    padding-top: 0.3em;
+}
+
+/*submit and reset button*/
+form input[type="submit"],
+form input[type="reset"] {
+    padding: 0.5em 0.8em;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #023952;
+    color: #fff;
+}
+
+/*input text and email*/
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    border-radius: 5px;
+    width: 300px;
+    font-size: 0.9em;
+    padding: 6px 8px;
+    background-color: #f8f9f9;
+    border: 1px solid #202020;
+    box-sizing: border-box;
+}
+
+/* contact us page : end */
+
+/* footer */
+footer {
+    background-color: #023952;
+}
+/* footer info block */
+footer .info-block {
+    padding: 0.8em 0.5em;
+    width: 33%;
+    text-align: center;
+    color: #fff;
+    border-right: 1px solid #f6f3f3;
+    float: left;
+}
+/* info item */
+footer .info-block p,
+footer .info-block address {
+    margin: 0.5em;
+}
+footer .info-block address {
+    font-style: normal;
+}
+
+/* remove underline from link  */
+footer .info-block a {
+    text-decoration: none;
+    color: inherit;
+}
+footer .info-block:last-child {
+    border-right: none;
+}
+
+/* copyright  */
+footer #copyright {
+    background-color: #021f2c;
+    padding: 0.5em;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    clear: both;
+}
+
+/* desktop view  */
+@media screen and (min-width: 768px) {
+    /* logo */
+    #logo {
+        width: 200px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    nav {
+        /*navigation*/
+        position: absolute;
+        top: 20px;
+        right: 0;
+    }
+}

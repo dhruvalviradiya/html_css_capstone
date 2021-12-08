@@ -1,0 +1,60 @@
+/*  
+  **************************************
+  **************************************
+  ***                                ***
+  ***    Auther: Dhruval Viradiya    ***
+  ***          HTML5/CSS3            ***
+  ***      November 30, 2021         ***
+  ***                                ***
+  **************************************
+  **************************************
+  */
+* {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+/* body */
+body {
+    font-size: 12px;
+    width: 100%;
+}
+
+/* main wrapper */
+#main-wrapper {
+    overflow: auto;
+    width: 100%;
+}
+
+/* container */
+.container {
+    width: 100%;
+}
+
+/*header */
+header {
+    background-color: rgba(1, 70, 102, 0.8);
+}
+
+/* remove heading */
+.menu-space {
+    display: none;
+}
+
+/* section heading */
+.section-heading h1,
+.section-heading h2 {
+    font-size: 24px;
+}
+
+/* home page : start */
+
+/* Parallax Banner height adjustment   */
+.banner-area,
+.slider-title {
+    height: 320px;
+}
+
+.slider-title {
+    margin-top: 90px;
+}
+/* home page : end */

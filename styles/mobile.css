@@ -1,0 +1,166 @@
+/*  
+  style for mobile devices
+  **************************************
+  **************************************
+  ***                                ***
+  ***    Auther: Dhruval Viradiya    ***
+  ***          HTML5/CSS3            ***
+  ***      November 30, 2021         ***
+  ***                                ***
+  **************************************
+  **************************************
+  */
+#main-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+/* logo wrapper */
+#logo {
+    padding: 0.6em 1em;
+}
+/* logo image */
+#logo img {
+    width: auto;
+    max-width: 100%;
+}
+/* header contact info */
+.header-contact-info .info .info-item {
+    border-right: none;
+}
+
+/* navigation */
+nav {
+    perspective: 1000px;
+    perspective-origin: -100px top;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* hamburger menu button */
+nav #hamburger_button {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 8px;
+    z-index: 1000;
+}
+nav a#hamburger_button span {
+    background-color: #fff;
+    height: 4px;
+    display: block;
+    margin: 6px 7px 7px 7px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animation transitions for the individual bars. */
+nav:hover a#hamburger_button span#topbar {
+    -webkit-transform: rotate(45deg) translate(7px, 8px);
+    transform: rotate(45deg) translate(7px, 8px);
+}
+nav:hover a#hamburger_button span#middlebar {
+    opacity: 0;
+}
+nav:hover a#hamburger_button span#bottombar {
+    -webkit-transform: rotate(135deg) translate(-7px, 8px);
+    transform: rotate(135deg) translate(-7px, 8px);
+}
+
+/* main menu */
+nav ul#navlist {
+    margin: 0;
+    padding: 5px;
+    position: absolute;
+    top: 50px;
+    right: 8px;
+    font-size: 1.1em;
+    width: 200px;
+    background-color: #021f2c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Hover to open the menu */
+nav:hover ul#navlist {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+nav ul#navlist li {
+    display: block;
+    margin-bottom: 3px;
+}
+
+/* Stop the LAST li from having margin-bottom */
+nav ul#navlist li:last-of-type {
+    margin-bottom: 0;
+}
+
+nav ul#navlist li a {
+    padding: 8px 18px 7px 18px;
+}
+nav ul#navlist li a:hover,
+nav ul#navlist li a.active {
+    background: #195875;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* section styling start */
+section#content {
+    padding: 0.5em;
+}
+
+.section-heading:after,
+.section-heading::before {
+    content: none;
+}
+/*  section styling end */
+
+/* home page : start */
+.slider-title .tagline {
+    font-size: 30px;
+}
+/* home page : end */
+
+/* service page : start */
+
+/* increase width of block */
+.service-block .service-detail,
+.service-block .service-img-block {
+    width: 100%;
+}
+
+/* remove margin from image block */
+.service-block .service-img-block {
+    margin-left: 0;
+}
+/* service page : end */
+
+/* contact us page : start */
+form {
+    margin: auto 15px;
+}
+/* contact us page : end */
+
+/* footer */
+footer .info-block {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #f6f3f3;
+    float: none;
+}
+footer .info-block:last-child {
+    border-bottom: none;
+}
